@@ -20,7 +20,9 @@ echo "Zsh/theme installed"
 
 echo "Dotfiles install"
 
-mv "$(dirname "$0")/config/"* "$(dirname "$0")/config"/.* ~/
+mkdir -p ~/.config
+cp -r "$SCRIPT_DIR/config/"* ~/.config/
+cp -r "$SCRIPT_DIR/config"/.??* ~/.config/ 2>/dev/null || true
 
 echo "Dotfiles installed!"
 
