@@ -20,6 +20,8 @@ echo "Zsh/theme installed"
 
 echo "Dotfiles install"
 
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+
 mkdir -p ~/.config
 cp -r "$SCRIPT_DIR/config/"* ~/.config/
 cp -r "$SCRIPT_DIR/config"/.??* ~/.config/ 2>/dev/null || true
