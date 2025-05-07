@@ -24,7 +24,7 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 mkdir -p ~/.config
 cp -r "$SCRIPT_DIR/config/"* ~/.config/
-cp -r "$SCRIPT_DIR/config"/.??* ~/.config/ 2>/dev/null || true
+cp -r "$SCRIPT_DIR/config"/.??* ~/ 2>/dev/null || true
 
 echo "Dotfiles installed!"
 
